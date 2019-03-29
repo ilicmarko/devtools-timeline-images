@@ -1,12 +1,18 @@
 {
   "name": "devtools-timline-images",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple utility to transform exported Chrome devtools timeline json to images. ",
   "main": "index.js",
   "repository": "git@github.com:ilicmarko/devtools-timeline-images.git",
   "author": "Marko Ilic <ilic.marko.05@live.com>",
   "license": "MIT",
-  "keywords": ["Chrome", "Devtools", "Timeline", "Extract", "Images"],
+  "keywords": [
+    "Chrome",
+    "Devtools",
+    "Timeline",
+    "Extract",
+    "Images"
+  ],
   "homepage": "https://github.com/ilicmarko/devtools-timeline-images#readme",
   "bin": {
     "devtools-timeline-images": "index.js"
