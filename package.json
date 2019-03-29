@@ -1,5 +1,5 @@
 {
-  "name": "devtools-timline-images",
+  "name": "devtools-timeline-images",
   "version": "1.0.1",
   "description": "Simple utility to transform exported Chrome devtools timeline json to images. ",
   "main": "index.js",
