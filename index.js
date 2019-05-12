@@ -3,6 +3,7 @@
 const fs = require('fs');
 const chalk = require('chalk');
 const path = require('path');
+const utils = require('./utils');
 const argv = require('minimist')(process.argv.slice(2), {
     string: ['input', 'output'],
     alias: { i: 'input', o: 'output' },
@@ -59,9 +60,18 @@ if (!snapshots.length) {
     process.exit(1);
 }
 
+let imageStream;
+let ext;
+
 snapshots.forEach((snapshot, i) => {
-    fs.writeFileSync(path.resolve(output, `${i}.png`), Buffer.from(snapshot, 'base64'));
+    imageStream = Buffer.from(snapshot, 'base64');
+    ext = utils.getFileTypeFromStream(imageStream);
+    if (ext) {
+        fs.writeFileSync(path.resolve(output, `${i}.${ext}`), imageStream);
+    } else {
+        console.log(chalk.yellow(`Frame ${i} couldn't be saved.`))
+    }
 });
 
-console.log(chalk.green.bold(`Files exported to ${output}`));
+console.log(chalk.green.bold(`${snapshots.length} frames exported to ${output}`));
 process.exit();
