@@ -1,7 +1,9 @@
-# Devtools Timeline Images
+<p align="center"><img src="https://marko.ilic.ninja/dte.svg" alt="logo" width="450"></p>
+
+<h1 align="center">Devtools Timeline Exporter</h1>
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/devtools-timeline-images"><img alt="npm" src="https://img.shields.io/npm/v/devtools-timeline-images.svg?style=for-the-badge"></a>
+    <a href="https://www.npmjs.com/package/devtools-timeline-images"><img alt="npm" src="https://img.shields.io/npm/v/devtools-timeline-images.svg"></a>
 </p>
 
 A really small utility to extract images from Chrome Timeline.
