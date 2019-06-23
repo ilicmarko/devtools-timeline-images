@@ -36,6 +36,23 @@ Options:
 
 Also you can generate images with an alias `i`, like this: `dte i <input> [options]`.
 
+### Video
+With a video command you can instantly generate a slowdown video of the loading progress.
+
+```bash
+dte video <input> [options]
+
+Generate slowdown video from the timeline export.
+
+Options:
+  --version     Show version number                                    [boolean]
+  --output, -o  Video file name to export.                   [string] [required]
+  -h, --help    Show help                                              [boolean]
+
+```
+
+Also you can generate a video with an alias `v`, like this: `dte v <input> [options]`.
+
 ## Options
 - `-o` or `--output` - Specify the output folder.
 
