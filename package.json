@@ -22,9 +22,12 @@
     "dte": "lib/index.js"
   },
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.18",
     "chalk": "^2.4.2",
+    "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^8.0.0",
     "inquirer": "^6.3.1",
+    "tmp-promise": "^2.0.1",
     "yargs": "^13.2.2"
   }
 }
