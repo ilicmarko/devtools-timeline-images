@@ -115,3 +115,5 @@ typings/
 # next.js build output
 .next
 
+# Sample files
+/_samples
