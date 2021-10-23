@@ -1,4 +1,4 @@
-<p align="center"><img src="https://marko.ilic.ninja/dte.svg" alt="logo" width="450"></p>
+<p align="center"><img src="./.github/logo.svg" alt="logo" width="450"></p>
 
 <h1 align="center">Devtools Timeline Exporter</h1>
 
